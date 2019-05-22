@@ -1,0 +1,518 @@
+@import "base.css";
+/*hearder*/
+header{
+    height: 0.88rem;
+    color: #4ebbfe;
+    font-size: 0.38rem;
+    display: flex;
+    padding: 0 0.22rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.03rem 0.43rem 0 rgba(41, 167, 255, 0.13);
+}
+header a{
+    color: #4ebbfe;
+    width: 0.16rem;
+    height: 0.16rem;
+}
+header > p{
+    font-size: 0.38rem;
+}
+.shopImg{
+    width: 100%;
+    height: 7rem;
+    padding: 1.7rem 2.24rem;
+    box-sizing: border-box;
+}
+/*main*/
+.main{
+    width: 100%;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+}
+/*商品信息*/
+.shopmess{
+    width: 100%;
+    padding-bottom: 0.18rem;
+    border-bottom: 0.01rem solid #f0f5f7;
+    box-sizing: border-box;
+}
+.shopmess h1{
+    font-size: 0.3rem;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 0.16rem;
+}
+.shopmess p{
+    height: 0.55rem;
+    line-height: 1.5;
+    font-size: 0.22rem;
+    color: #000000;
+    opacity: 0.3;
+    margin-bottom: 0.16rem;
+}
+.shopmess > .money{
+    position: relative;
+}
+.shopmess > .money > span{
+    margin-right: 0.22rem;
+}
+.shopmess > .money > .price{
+    font-size: 0.26rem;
+    color: #fbb548;
+}
+.shopmess > .money > .deposit{
+    font-size: 0.2rem;
+    color: #41b2fc;
+    padding: 0.08rem 0.18rem;
+    border-radius: 0.18rem;
+    background: #e8f6ff;
+}
+.shopmess > .money > .service{
+    font-size: 0.2rem;
+    color: #36d681;
+    padding: 0.08rem 0.18rem;
+    border-radius: 0.18rem;
+    background: #e7faf2;
+}
+.shopmess > .money > .sold{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.shopmess > .money > .sold span{
+    height: 0.18rem;
+    font-size: 0.2rem;
+    color: #000000;
+    opacity: 0.3;
+    margin-right: 0.08rem;
+    position: relative;
+}
+.shopmess > .money > .sold span::before{
+    content: '';
+    display: block;
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    background: #36d681;
+    position: absolute;
+    left: -0.1rem;
+    top: 50%;
+    margin-top: -0.03rem;
+}
+.shopmess > .money > .sold strong{
+    height: 0.25rem;
+    font-size: 0.24rem;
+    color: #36a8fe;
+}
+/*优惠*/
+.discounts{
+    width: 100%;
+    padding: 0.22rem 0;
+    border-bottom: 0.01rem solid #f0f5f7;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.discounts span img{
+    width: 0.5rem;
+    height: 0.3rem;
+    margin-right: 0.1rem;
+}
+.discounts .lq{
+    font-size: 0.24rem;
+    color: #ff844e;
+    margin-right: 0.13rem;
+}
+.discounts .mj{
+    padding: 0.08rem 0.27rem;
+    font-size: 0.24rem;
+    background-color: #ff844e;
+    background-image: linear-gradient(270deg, #ffca3b 0%, #ff933b 100%);
+    color: #fbfeff;
+    border-radius: 0.2rem;
+}
+.tag{
+    width: 100%;
+    padding: 0.22rem 0;
+    border-bottom: 0.01rem solid #f0f5f7;
+    box-sizing: border-box;
+}
+.tag span{
+    font-size: 0.24rem;
+    color: #41b2fc;
+    margin-right: 0.8rem;
+    position: relative;
+    margin-left: 0.09rem;
+}
+.tag span::before{
+    content: '';
+    display: block;
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    background: #36d681;
+    position: absolute;
+    left: -0.1rem;
+    top: 50%;
+    margin-top: -0.03rem;
+}
+.assess{
+    width: 100%;
+    padding: 0.22rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.assess > div > span{
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #4f5b64;
+}
+.assess > div > span:nth-child(1){
+    color: #41b2fc;
+    position: relative;
+    margin-left: 0.14rem;
+}
+.assess > div > span:nth-child(1)::before{
+    content: '';
+    display: block;
+    width: 0.1rem;
+    height: 0.06rem;
+    background-color: #44b5ff;
+    box-shadow: 0px 2px 5px 0px rgba(68, 181, 255, 0.43);
+    border-radius: 3px;
+    position: absolute;
+    left: -0.14rem;
+    top: 50%;
+    margin-top: -0.03rem;
+}
+.assess > a{
+    font-size: 0.22rem;
+    color: #3bacfe;
+    display: block;
+}
+.assess > a > i{
+    font-size: 0.22rem;
+    opacity: 0.8;
+}
+/*
+.assess > a > img{
+    width: 0.22rem;
+    height: 0.18rem;
+    margin: 0.08rem;
+    float: right;
+}
+*/
+.asscontent > li{
+    border-bottom: 0.01rem solid #f0f5f7;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+}
+.asscontent .asscontentL img{
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+}
+.asscontent .asscontentR{
+    margin-left: 0.2rem;
+    width: 100%;
+}
+.asscontentR div span:nth-child(1){
+    font-size: 0.2rem;
+    color: #cfcfcf;
+    margin-right: 0.44rem;
+}
+.asscontentR div span:nth-child(2){
+    color: #36a8fe;
+}
+.asscontentR div span:nth-child(3){
+    color: #36a8fe;
+}
+.asscontentR div span:nth-child(4){
+    color: #36a8fe;
+}
+.asscontentR div span:nth-child(5){
+    color: #e6e6e6;
+}
+.asscontentR div span:nth-child(6){
+    color: #e6e6e6;
+}
+.asscontentR div span:nth-child(7){
+    font-size: 0.22rem;
+    color: #9ed5ff;
+    float: right;
+}
+.asscontentR p{
+    font-size: 0.26rem;
+    color: #000000;
+    opacity: 0.6;
+    margin-top: 0.2rem;
+}
+.asscontentR .address{
+    font-size: 0.22rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #000000;
+    opacity: 0.3;
+    margin-top: 0.2rem;
+}
+.asscontentR img{
+    display: block;
+    width: 1.8rem;
+    height: 1rem;
+}
+.shopdetail{
+    padding: 0.22rem 0;
+    border-bottom: 0.01rem solid #f0f5f7;
+}
+.shopdetail h2{
+    font-size: 0.32rem;
+    margin-left: 0.14rem;
+    position: relative;
+}
+.shopdetail h2 span:nth-child(1){
+    color: #35db82;
+}
+.shopdetail h2 span:nth-child(2){
+    color: #4f5b64;
+}
+.shopdetail h2::before{
+    content: '';
+    display: block;
+    width: 0.1rem;
+    height: 0.06rem;
+    background-color: #35db82;
+    box-shadow: 0 0.02rem 0.05rem 0 rgba(53, 219, 130, 0.43);
+    border-radius: 3px;
+    position: absolute;
+    left: -0.14rem;
+    top: 50%;
+    margin-top: -0.03rem;
+}
+.shopdetail > .message{
+    width: 100%;
+    padding: 0.2rem 0.1rem;
+    box-sizing: border-box;
+}
+.shopdetail .message a{
+    width: 100%;
+    display: flex;
+}
+.message .messageL{
+    width: 1.74rem;
+    height: 1.74rem;
+    padding: 0.27rem;
+    box-sizing: border-box;
+    margin-right: 0.27rem;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 21px 0px rgba(223, 223, 223, 0.43);
+    border-radius: 10px;
+}
+.message .messageL img{
+    display: block;
+    border-radius: 50%;
+}
+.message .messageR{
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.messageR h1{
+    font-size: 0.3rem;
+    color: #000000;
+}
+.score span{
+    color: #000000;
+    opacity: 0.3;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    position: relative;
+    font-size: 0.22rem;
+}
+.score span::before{
+    content: '';
+    display: block;
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    background: #4ebbfe;
+    position: absolute;
+    left: -0.1rem;
+    top: 50%;
+    margin-top: -0.03rem;
+    opacity: 1;
+}
+.score strong{
+    font-weight: bold;
+    color: #36a8fe;
+    font-size: 0.26rem;
+}
+.tag span {
+    width: 1.2rem;
+    height: 0.35rem;
+    padding: 0.02rem 0.2rem;
+    font-size: 0.2rem;
+    margin-right: 0.09rem;
+    background: #e7f6ff;
+    border-radius: 18px;
+    line-height: 0.35rem;
+    color: #4ebbfe;
+}
+.sold span{
+    height: 0.18rem;
+    font-size: 0.18rem;
+    color: #000000;
+    opacity: 0.3;
+    margin-right: 0.08rem;
+    position: relative;
+}
+.sold span::before{
+    content: '';
+    display: block;
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    background: #36d681;
+    position: absolute;
+    left: -0.1rem;
+    top: 50%;
+    margin-top: -0.03rem;
+    opacity: 1;
+}
+.sold strong{
+    height: 0.25rem;
+    font-size: 0.22rem;
+    opacity: 0.2;
+}
+.messageR > .price{
+    font-size: 0.26rem;
+    color: #fbb548;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.recommend{
+    padding: 0.22rem 0;
+    border-bottom: 0.01rem solid #f0f5f7;
+}
+.recommend h2{
+    font-size: 0.32rem;
+    margin-left: 0.14rem;
+    position: relative;
+}
+.recommend h2 span:nth-child(1){
+    color: #35db82;
+}
+.recommend h2 span:nth-child(2){
+    color: #4f5b64;
+}
+.recommend h2::before{
+    content: '';
+    display: block;
+    width: 0.1rem;
+    height: 0.06rem;
+    background-color: #35db82;
+    box-shadow: 0 0.02rem 0.05rem 0 rgba(53, 219, 130, 0.43);
+    border-radius: 3px;
+    position: absolute;
+    left: -0.14rem;
+    top: 50%;
+    margin-top: -0.03rem;
+}
+.recommend > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recommend > ul > li > div{
+    width: 1.88rem;
+    height: 2rem;
+    padding: 0.29rem 0.32rem;
+    box-sizing: border-box;
+    margin-top: 0.2rem;
+}
+.recommend > ul > li > p{
+    font-size: 0.26rem;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 0.2rem;
+}
+.recommend > ul > li > span{
+    font-size: 0.28rem;
+    color: #fbb548;
+    margin-bottom: 0.2rem;
+}
+footer{
+    padding: 0.2rem 0.22rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer > .image{
+    width: 2.28rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer > .image > a > img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+footer > .image > .dp > p{
+    font-size: 0.2rem;
+    color: #3bacfe;
+    opacity: 0.6;
+}
+footer > .image > .lxsj > p{
+    font-size: 0.2rem;
+    color: #2ed977;
+    opacity: 0.6;
+}
+footer > .order{
+    width: 2.28rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer > .order{
+    width: 4.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer > .order a:nth-child(1){
+    width: 1.8rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    padding: 0 0.1rem;
+    background: #31d69a;
+    box-shadow: 0 0.04rem 0.2rem 0 rgba(55, 223, 116, 0.75);
+    border-radius: 0.3rem;
+    text-align: center;
+    color: #ffffff;
+}
+footer > .order a:nth-child(2){
+    width: 1.8rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    padding: 0 0.1rem;
+    background-color: #3bacfe;
+    box-shadow: 0 0.05rem 0.12rem 0 rgba(59, 172, 254, 0.43);
+    border-radius: 0.3rem;
+    text-align: center;
+    color: #ffffff;
+}

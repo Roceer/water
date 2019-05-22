@@ -1,0 +1,137 @@
+@import "base.css";
+/*hearder*/
+header{
+    height: 0.88rem;
+    color: #4ebbfe;
+    display: flex;
+    padding: 0 0.22rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header > p{
+    font-size: 0.38rem;
+}
+header a{
+    color: #4ebbfe;
+    width: 0.16rem;
+    height: 0.16rem;
+}
+.search{
+    height: 0.64rem;
+    padding: 0.17rem 0.22rem;
+    line-height: 0.64rem;
+    color: #4ebbfe;
+}
+/*search*/
+.search span{
+    float: left;
+    font-size: 0.28rem;
+}
+.search div{
+    float: left;
+}
+.search a{
+    float: right;
+    width: 5.93rem;
+    height: 0.6rem;
+    border: 0.03rem solid rgba(55, 169, 254, 0.17);
+    border-radius: 0.3rem;
+    opacity: 0.58;
+    position: relative;
+    background-color: #ebf7ff;
+}
+.search p{
+    width: 0.66rem;
+    height: 0.66rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*banner*/
+.banner{
+    height: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.banner a{
+    height: 3rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner ul{
+    position: absolute;
+    left: 3.45rem;
+    bottom: 0.17rem;
+}
+.banner ul li{
+    width: 0.11rem;
+    height: 0.11rem;
+    border-radius: 50%;
+    background-color: #46b7f8;
+    margin-right: 0.13rem;
+    opacity: 0.27;
+    float: left;
+}
+.banner ul li:hover{
+    opacity: 1;
+}
+/*选项列表*/
+.option{
+    height: 6.32rem;
+    padding: 0.46rem 0.65rem 0.52rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.option a{
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    color: #8e9397;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.24rem;
+}
+.option > a > div{
+    width: 1.13rem;
+    height: 1.13rem;
+}
+/*footer*/
+footer{
+    width: 100%;
+    height: 0.98rem;
+    padding: 0 0.55rem;
+    box-sizing: border-box;
+    background-color: #f1f9ff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+footer > div{
+    padding: 0.1rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer > div > a{
+    width: 0.8rem;
+    height: 100%;
+    color: #4ebbfe;
+    text-align: center;
+    font-size: 0.24rem;
+    opacity: 0.5;
+}
+footer > div > a.hot{
+    opacity: 1;
+}
+footer > div > a > div{
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+}

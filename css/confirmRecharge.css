@@ -112,3 +112,16 @@ section > .rechargeCount{
 .payment > li > p.hot{
     background: #00c1de;
 }
+.Recharge{
+    width: 3.96rem;
+    height: 0.6rem;
+    display: block;
+    margin: 0 auto;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #ffffff;
+    background-image: linear-gradient(90deg, #37e06f 0%, #31d69a 100%);
+    box-shadow: 0 0.04rem 0.2rem 0 rgba(55, 223, 116, 0.75);
+    border-radius: 0.3rem;
+}

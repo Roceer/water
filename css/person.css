@@ -51,11 +51,18 @@ section{
     font-size: 0.3rem;
     margin: 0.2rem 0;
 }
-.preview > .person > .personMess > span:nth-child(1){
+.preview > .person > .personMess > span:nth-child(2){
     font-size: 0.22rem;
     opacity: 0.4;
 }
-.preview > .person > .personMess > span:nth-child(2){
+.preview > .person > .personMess > span:nth-child(3){
+    font-size: 0.22rem;
+    color: #3bacfe;
+}
+.preview > .person > .promotion{
+    margin: 0.3rem 0 0 2rem;
+}
+.preview > .person > div:last-of-type > a > span{
     font-size: 0.22rem;
     color: #3bacfe;
 }

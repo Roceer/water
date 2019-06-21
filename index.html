@@ -7,13 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no, email=no" />
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1194377_uyoztgqn1sm.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1194377_t3w2dvu5b4o.css">
+    <script src="js/swiper.min.js"></script>
     <title>首页</title>
 </head>
 <body>
 <!--页头-->
 <header>
-    <a href="" class="iconfont icon-fanhui"></a>
+    <a class="iconfont icon-fanhui"></a>
     <p>首页</p>
     <a href=""></a>
 </header>
@@ -25,15 +27,22 @@
     </a>
 </div>
 <!--轮播图-->
-<div class="banner">
-    <a href=""><img src="./image/banner.png" alt="图片飞啦"></a>
-    <a href=""><img src="./image/banner.png" alt="图片飞啦"></a>
-    <a href=""><img src="./image/banner.png" alt="图片飞啦"></a>
-    <ul>
+<div class="banner swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href=""><img src="./image/h1.jpg" alt="图片飞啦"></a></div>
+        <div class="swiper-slide"><a href=""><img src="./image/banner.png" alt="图片飞啦"></a></div>
+        <div class="swiper-slide"><a href=""><img src="./image/h2.jpg" alt="图片飞啦"></a></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev" style="width: 0.27rem;height: 0.44rem; background-size: 0.27rem 0.44rem"></div>
+    <div class="swiper-button-next" style="width: 0.27rem;height: 0.44rem; background-size: 0.27rem 0.44rem"></div>
+    <!--<ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
+    </ul>-->
 </div>
 <!--选项列表-->
 <div class="option">
@@ -96,5 +105,27 @@
         </a>
     </div>
 </footer>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true, // 循环模式选项
+
+        // 分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        //自動播放
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    })
+</script>
 </body>
 </html>
